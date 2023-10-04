@@ -1,12 +1,12 @@
 @import url("./reset.css");
-/* #FEAD4C */
+/* #FEAD4C #FFEBCD*/
 
 body {
   background-color: #f4f4f4;
 }
 body .contents-box {
   max-width: 1000px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: white;
 }
@@ -52,12 +52,72 @@ body .contents-box {
   border: 1px solid;
   margin: 20px;
 }
+/* create-post-section */
+.create-post-section {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fead4c;
+}
+.create-post-section > input {
+  width: 500px;
+  height: 40px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+}
+.create-post-section > textarea {
+  width: 500px;
+  height: 100px;
+  resize: none;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.create-post-section > button {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.create-post-section > button:hover {
+  /* background-color: #; */
+  box-shadow: 2px 2px 3px rgb(170, 169, 169);
+}
+
 /* main-section */
 .main-section {
   width: 100%;
-  height: 500px;
+  padding: 10px 16px;
+  box-sizing: border-box;
   margin-bottom: 60px;
-  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-section > .main-article {
+  border: 1px solid;
+  max-width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #FEAD4C;
+  border-radius: 8px;
 }
 
 /* footer */
@@ -71,6 +131,7 @@ body .contents-box {
   left: 50%;
   transform: translateX(-50%);
   border-top: 1px solid lightgray;
+  background-color: white;
 }
 .footer > ul {
   width: 100%;
